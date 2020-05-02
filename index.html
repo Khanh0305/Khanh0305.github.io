@@ -1,22 +1,67 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-	<title> Chúc mừng sinh nhật mẹ </title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">  
-	<script type="text/javascript" src="vendor/bootstrap.js"></script>
- 	<script type="text/javascript" src="js/scripts.js"></script>
-	<link rel="stylesheet" href="vendor/bootstrap.css">
- 	<link rel="stylesheet" href="style.css">
- 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
- 	<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=0.5, minimum-scale=0.5, width=device-width" />
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+  <!--
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  -->
+  <title>Chúc mừng sinh nhật mẹ</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+  <script type="text/javascript" charset="utf-8">
+    function hasClassName(inElement, inClassName)
+    {
+        var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)');
+        return regExp.test(inElement.className);
+    }
+    function addClassName(inElement, inClassName)
+    {
+        if (!hasClassName(inElement, inClassName))
+            inElement.className = [inElement.className, inClassName].join(' ');
+    }
+    function removeClassName(inElement, inClassName)
+    {
+        if (hasClassName(inElement, inClassName)) {
+            var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)', 'g');
+            var curClasses = inElement.className;
+            inElement.className = curClasses.replace(regExp, ' ');
+        }
+    }
+    function toggleClassName(inElement, inClassName)
+    {
+        if (hasClassName(inElement, inClassName))
+            removeClassName(inElement, inClassName);
+        else
+            addClassName(inElement, inClassName);
+    }
+    function toggleShape()
+    {
+      var shape = document.getElementById('shape');
+      if (hasClassName(shape, 'ring')) {
+        removeClassName(shape, 'ring');
+        addClassName(shape, 'cube');
+      } else {
+        removeClassName(shape, 'cube');
+        addClassName(shape, 'ring');
+      }
+      
+      var stage = document.getElementById('stage');
+      if (hasClassName(shape, 'ring'))
+        stage.style.webkitTransform = 'translateZ(-200px)';
+      else
+        stage.style.webkitTransform = '';
+    }
+  </script>
 </head>
 <body>
-    
- 		<div style="text-align: right;padding: 15px;"><a href="#" class="classname">Đổi kiểu</a></div>
+
+  <div style="text-align: right;padding: 15px;"><a href="#" class="classname" onclick="toggleShape()">Đổi kiểu</a></div>
   
   <div id="container">
     <div id="stage">
@@ -36,11 +81,11 @@
       </div>
     </div>
   </div>
-
+  <iframe src="https://www.nhaccuatui.com/mh/auto/baOI5s9tCy" width="0" height="0" frameborder="0" allowfullscreen allow="autoplay"></iframe>
 
   <!-- phan audio -->
-    <iframe src="https://www.nhaccuatui.com/mh/auto/baOI5s9tCy" width="0" height="0" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+  
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
 </body>
 </html>

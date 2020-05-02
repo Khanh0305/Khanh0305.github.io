@@ -4,7 +4,7 @@ body {
 
     font-family: Helvetica, Arial;
     margin: 0;
-    background-image: url("./img/bg1.jpg");
+    background-image: url("../img/bg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px 20%;
@@ -63,73 +63,73 @@ body {
     }
   
     .one {
-    background-image: url(./img/1.jpg);
+    background-image: url(../img/1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
     .two {
-    background-image: url(./img/2.jpg);
+    background-image: url(../img/2.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
     .three {
-    background-image: url(./img/3.jpg);
+    background-image: url(../img/3.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
     .four {
-    background-image: url(./img/4.jpg);
+    background-image: url(../img/4.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
     .five {
-    background-image: url(./img/5.jpg);
+    background-image: url(../img/5.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
     .six {
-    background-image: url(./img/6.jpg);
+    background-image: url(../img/6.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
     .seven {
-    background-image: url(./img/7.jpg);
+    background-image: url(../img/7.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
     .eight {
-    background-image: url(./img/8.jpg);
+    background-image: url(../img/8.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
     .nine {
-    background-image: url(./img/9.jpg);
+    background-image: url(../img/9.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
     .ten {
-    background-image: url(./img/10.jpg);
+    background-image: url(../img/10.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
     .eleven {
-    background-image: url(./img/11.jpg);
+    background-image: url(../img/11.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
     .twelve {
-    background-image: url(./img/12.jpg);
+    background-image: url(../img/12.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
@@ -283,9 +283,8 @@ body {
       width: 300px;
     }
 
-/* CSS button1 Äá»•i Kiá»ƒu */
+/* CSS Button Äá»•i Kiá»ƒu */
 .classname {
-	
   -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
   -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
   box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -308,14 +307,14 @@ body {
   text-indent:0;
   border:1px solid #dcdcdc;
   display:inline-block;
-  color:#777777;  
+  color:#777777;
   font-family:arial;
-  font-size:20px;
+  font-size:15px;
   font-weight:bold;
   font-style:normal;
-  height:60px;
+  height:50px;
   line-height:50px;
-  width:120px;
+  width:100px;
   text-decoration:none;
   text-align:center;
   text-shadow:1px 1px 0px #ffffff;
@@ -344,7 +343,6 @@ body {
     height: 100px;
     margin: -4px auto;
     z-index: -1;
-
 }
 
 #bg-artwork
@@ -354,7 +352,7 @@ body {
     right: -30px;
     bottom: -30px;
     left: -30px;
-  
+    background-image: url("./img/bg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -649,56 +647,37 @@ body {
     padding: 12px 0;
 }
 
-.button1
+.button
 {
-    width: 76px;
-	height: 76px;
+    width: 26px;
+    height: 26px;
     padding: 25px;
     background-color: #fff;
     border-radius: 6px;
     cursor: pointer;
 }
 
-.button1 i
+.button i
 {
     display: block;
     color: #b15167;
     font-size: 26px;
     text-align: center;
     line-height: 1;
-    width: 26px;
 }
 
-.button1, .button1 i
+.button, .button i
 {
     -webkit-transition: 0.2s ease all;
     transition: 0.2s ease all;
 }
 
-.button1:hover
+.button:hover
 {
     background-color: #e82843;
 }
 
-.button1:hover i
+.button:hover i
 {
     color: #fff;
-}
-
-/*CSS cho menu*/
-.logo{
-  width: 70px;
-  height: 70px;
-  background-image: url(./img/logo.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.menu{
-  background-color: #f5e6df;
-}
-nav .nav li a{
-  font-weight: bold;
-  font-family: 'Roboto Slab', serif;
-  margin: 18px;
-  font-size: 23px;
 }
